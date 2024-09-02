@@ -328,6 +328,10 @@ a.back-to-top:hover, a.back-to-top:focus {
 #about .img-thumb img {
   border: 8px solid #fff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+.img-thumb img:hover {
+  transform: scale(1.1); /* Adjust the scale value as needed */
 }
 
 .profile-wrapper {
