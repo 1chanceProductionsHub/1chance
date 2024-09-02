@@ -170,7 +170,7 @@ ul li, ol li {
 }
 
 .btn-common {
-  background-color: #00b4d9;
+  background-color: #ec743c;
   position: relative;
   z-index: 1;
 }
@@ -185,12 +185,16 @@ ul li, ol li {
 }
 
 .btn-danger:hover {
-  background-color: #f55262;
+  background-color: #f76372;
   border-color: #f55262;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
+  
+    transform: scale(1);
+  
+  
 }
 
 .btn-border {
@@ -336,6 +340,11 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .profile-wrapper {
   padding: 45px 0;
+  
+}
+.profile-wrapper p {
+  font-size: 1.2rem; /* Increased font size */
+  line-height: 1.6;
 }
 
 .profile-wrapper .btn {
@@ -1155,7 +1164,23 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 #copyright p a:hover {
-  color: #00b4d9;
+  color: #e93c26;
 }
 
+/* Button styles */
+.btn i {
+  vertical-align: middle; /* Align icon vertically with text */
+  margin-right: 5px;      /* Adjust space between icon and text */
+}
+
+/* If you want to target a specific button */
+#contact-me-btn i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* For better alignment, you may also adjust the button line height */
+.btn {
+  line-height: 1.5;  /* Adjust this value to fine-tune alignment */
+}
 
