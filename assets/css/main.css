@@ -3,6 +3,7 @@ html {
   overflow-x: hidden;
 }
 
+
 body {
   background: #fff;
   font-size: 14px;
@@ -17,6 +18,13 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px; /* You can adjust the width as per your needs */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2, h3, h4 {
@@ -1289,4 +1297,30 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
       font-size: 28px;
   }
 }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+h1 {
+  text-align: center;
+  color: #004d26;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
