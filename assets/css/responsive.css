@@ -79,3 +79,10 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 450px) {
+  #hero-area .contents .head-title {
+    font-size: 14px;
+    width: 100%;
+  }
+}
