@@ -336,14 +336,46 @@ a.back-to-top:hover, a.back-to-top:focus {
 .section-padding {
   padding: 60px 0;
 }
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .section-padding {
+    padding: 50px 0; /* Slightly smaller padding for tablets */
+  }
+}
 
+/* For medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 0; /* Further reduce padding for medium screens */
+  }
+}
+
+/* For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .section-padding {
+    padding: 30px 0; /* Smallest padding for mobile screens */
+  }
+}
 #about .img-thumb img {
   border: 8px solid #fff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  margin-left: 15px;
 }
 .img-thumb img:hover {
   transform: scale(1.1); /* Adjust the scale value as needed */
+}
+
+@media (max-width: 768px) {
+  #about .img-thumb img {
+    transform: translateX(5px); /* Less translation on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #about .img-thumb img {
+    transform: translateX(0); /* No translation on very small screens */
+  }
 }
 
 .profile-wrapper {
@@ -604,7 +636,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar {
-  padding: 0;
+  height: 75px; /* Adjust based on your logo height */
+  padding-top: 10px; /* Adjust for vertical alignment */
 }
 
 .navbar li.active a.nav-link {
