@@ -26,9 +26,9 @@
   // Sticky Nav
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
+            // $('.scrolling-navbar').addClass('top-nav-collapse');
         } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
+            // $('.scrolling-navbar').removeClass('top-nav-collapse');
         }
     });
 

@@ -86,3 +86,16 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  #typed-name {
+    font-size: 2rem; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  #typed-name {
+    font-size: 1.5rem; /* Adjust for mobile */
+    padding: 0 10px;
+  }
+}
